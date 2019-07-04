@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Y2a-zh-hJx">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Schedule-->
+        <scene sceneID="r15-QY-HaZ">
+            <objects>
+                <viewController id="kZh-9l-lOb" customClass="ScheduleViewController" customModule="fifaworldarya" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="ytm-Qw-x9m">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="QkD-H4-cbZ">
+                                <rect key="frame" x="0.0" y="-5" width="414" height="818"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="ScheduleCell" rowHeight="201" id="nNR-mb-vHB" customClass="PhoneScheduleTableViewCell" customModule="fifaworldarya" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="28" width="414" height="201"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="nNR-mb-vHB" id="rkV-gt-vid">
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="200.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="751" text="teamALabel" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CZM-zE-Z8y">
+                                                    <rect key="frame" x="20" y="27" width="91" height="21"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="teamBLabel" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="F9p-gW-QH8">
+                                                    <rect key="frame" x="297" y="27" width="91" height="21"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="stadiumLabel" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YLx-XK-ppy">
+                                                    <rect key="frame" x="20" y="65" width="103" height="21"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="VS" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="w0c-aK-7Cd">
+                                                    <rect key="frame" x="196" y="45" width="22" height="21"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="751" text="Date" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3Jr-E7-bXX">
+                                                    <rect key="frame" x="297" y="61" width="36" height="21"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Time" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="E2V-2C-o3I">
+                                                    <rect key="frame" x="297" y="90" width="38" height="21"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="klv-tE-5Z8">
+                                                    <rect key="frame" x="184" y="146" width="46" height="30"/>
+                                                    <state key="normal" title="Button"/>
+                                                    <connections>
+                                                        <action selector="didPressSubscribe:" destination="nNR-mb-vHB" eventType="touchUpInside" id="HKa-Ak-pt3"/>
+                                                    </connections>
+                                                </button>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="City" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="z9f-9q-r98">
+                                                    <rect key="frame" x="20" y="90" width="31" height="21"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="E2V-2C-o3I" firstAttribute="top" secondItem="3Jr-E7-bXX" secondAttribute="bottom" constant="8" symbolic="YES" id="3Dz-kW-fvU"/>
+                                                <constraint firstAttribute="bottom" secondItem="klv-tE-5Z8" secondAttribute="bottom" constant="24.5" id="8Zu-vj-xFt"/>
+                                                <constraint firstItem="z9f-9q-r98" firstAttribute="top" secondItem="YLx-XK-ppy" secondAttribute="bottom" constant="4" id="CPN-sy-Rgf"/>
+                                                <constraint firstItem="E2V-2C-o3I" firstAttribute="baseline" secondItem="z9f-9q-r98" secondAttribute="baseline" id="CYC-Oz-mmU"/>
+                                                <constraint firstItem="w0c-aK-7Cd" firstAttribute="top" secondItem="rkV-gt-vid" secondAttribute="topMargin" constant="34" id="DuX-g3-fgN"/>
+                                                <constraint firstItem="3Jr-E7-bXX" firstAttribute="top" secondItem="F9p-gW-QH8" secondAttribute="bottom" constant="13" id="FHi-9V-gPl"/>
+                                                <constraint firstItem="klv-tE-5Z8" firstAttribute="top" secondItem="w0c-aK-7Cd" secondAttribute="bottom" constant="80" id="K3d-QL-zBZ"/>
+                                                <constraint firstItem="YLx-XK-ppy" firstAttribute="top" secondItem="CZM-zE-Z8y" secondAttribute="bottom" constant="17" id="KxU-A1-xBQ"/>
+                                                <constraint firstItem="3Jr-E7-bXX" firstAttribute="leading" secondItem="w0c-aK-7Cd" secondAttribute="trailing" constant="79" id="MLE-cc-Q1w"/>
+                                                <constraint firstItem="CZM-zE-Z8y" firstAttribute="leading" secondItem="rkV-gt-vid" secondAttribute="leadingMargin" id="NIL-kM-G4Q"/>
+                                                <constraint firstItem="YLx-XK-ppy" firstAttribute="leading" secondItem="z9f-9q-r98" secondAttribute="leading" id="PwV-nY-zTb"/>
+                                                <constraint firstItem="w0c-aK-7Cd" firstAttribute="centerX" secondItem="klv-tE-5Z8" secondAttribute="centerX" id="TAk-fB-inv"/>
+                                                <constraint firstItem="F9p-gW-QH8" firstAttribute="leading" secondItem="3Jr-E7-bXX" secondAttribute="leading" id="TsF-5x-nd7"/>
+                                                <constraint firstItem="3Jr-E7-bXX" firstAttribute="leading" secondItem="E2V-2C-o3I" secondAttribute="leading" id="ZLg-Gj-ULN"/>
+                                                <constraint firstItem="CZM-zE-Z8y" firstAttribute="firstBaseline" secondItem="F9p-gW-QH8" secondAttribute="firstBaseline" id="Zu4-5z-rcM"/>
+                                                <constraint firstItem="w0c-aK-7Cd" firstAttribute="centerX" secondItem="rkV-gt-vid" secondAttribute="centerX" id="b6T-0Y-8fO"/>
+                                                <constraint firstItem="CZM-zE-Z8y" firstAttribute="top" secondItem="rkV-gt-vid" secondAttribute="topMargin" constant="16" id="byq-UZ-Ud2"/>
+                                                <constraint firstItem="E2V-2C-o3I" firstAttribute="firstBaseline" secondItem="z9f-9q-r98" secondAttribute="firstBaseline" id="jqq-bl-ezt"/>
+                                                <constraint firstAttribute="bottomMargin" secondItem="klv-tE-5Z8" secondAttribute="bottom" constant="14" id="kHW-6b-3hy"/>
+                                                <constraint firstItem="E2V-2C-o3I" firstAttribute="centerY" secondItem="rkV-gt-vid" secondAttribute="centerY" id="qAZ-tI-on7"/>
+                                                <constraint firstItem="CZM-zE-Z8y" firstAttribute="leading" secondItem="YLx-XK-ppy" secondAttribute="leading" id="vzl-lV-pI7"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="cityLabel" destination="z9f-9q-r98" id="gp4-fk-p2v"/>
+                                            <outlet property="dateLabel" destination="3Jr-E7-bXX" id="uHi-0s-Vky"/>
+                                            <outlet property="stadiumLabel" destination="YLx-XK-ppy" id="oaw-lV-Mok"/>
+                                            <outlet property="subscribe" destination="klv-tE-5Z8" id="eoO-NM-IeC"/>
+                                            <outlet property="teamALabel" destination="CZM-zE-Z8y" id="qX3-dz-qw3"/>
+                                            <outlet property="teamBLabel" destination="F9p-gW-QH8" id="V47-rZ-wQV"/>
+                                            <outlet property="timeLabel" destination="E2V-2C-o3I" id="YeI-3P-g4O"/>
+                                            <outlet property="vsLabel" destination="w0c-aK-7Cd" id="ENd-ek-ocz"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="kZh-9l-lOb" id="N6d-uQ-WzL"/>
+                                </connections>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="Yhf-d6-rPK"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Schedule" id="mZR-sJ-OiD"/>
+                    <connections>
+                        <outlet property="scheduleTableview" destination="QkD-H4-cbZ" id="7U6-7R-tvn"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="98y-7s-Jrj" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-314.49275362318843" y="0.0"/>
+        </scene>
+        <!--Map-->
+        <scene sceneID="gsw-rs-qf0">
+            <objects>
+                <viewController id="GRh-16-oCN" customClass="MapViewController" customModule="fifaworldarya" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="9VX-DF-7Tp">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="Oyq-fj-CSE">
+                                <rect key="frame" x="0.0" y="44" width="414" height="769"/>
+                            </mapView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="Oyq-fj-CSE" firstAttribute="leading" secondItem="kJf-yu-Ynh" secondAttribute="leading" id="9R2-Uh-iMV"/>
+                            <constraint firstItem="Oyq-fj-CSE" firstAttribute="top" secondItem="kJf-yu-Ynh" secondAttribute="top" id="9b4-4b-sim"/>
+                            <constraint firstItem="kJf-yu-Ynh" firstAttribute="bottom" secondItem="Oyq-fj-CSE" secondAttribute="bottom" id="Ia0-Du-nOn"/>
+                            <constraint firstItem="kJf-yu-Ynh" firstAttribute="trailing" secondItem="Oyq-fj-CSE" secondAttribute="trailing" id="otd-S0-D1H"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="kJf-yu-Ynh"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Map" id="U1p-xB-vEv"/>
+                    <connections>
+                        <outlet property="mapView" destination="Oyq-fj-CSE" id="aca-ac-gNR"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ZlZ-dU-fGZ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-314" y="-648"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="oSw-bZ-inF">
+            <objects>
+                <tabBarController id="Y2a-zh-hJx" customClass="ViewController" customModule="fifaworldarya" customModuleProvider="target" sceneMemberID="viewController">
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="pTU-ii-0j4">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="49"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="GRh-16-oCN" kind="relationship" relationship="viewControllers" id="WSM-4R-MJc"/>
+                        <segue destination="kZh-9l-lOb" kind="relationship" relationship="viewControllers" id="82j-VI-BVd"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ChR-U3-UbC" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1216" y="-332"/>
+        </scene>
+    </scenes>
+</document>
